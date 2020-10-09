@@ -1,0 +1,59 @@
+*ul{
+    text-decoration: none;
+    text-transform: none;
+    list-style-type: none;
+}
+body{
+
+    width: 800px;
+    height: 800px;
+    padding: 0;
+    margin:50px auto 50px auto;
+    background-color: gainsboro;
+
+
+}
+.header{
+    text-align: center;
+}
+.chess{
+    height: 800px;
+    width: 800px;
+    margin: 30px auto;
+    border: 1px solid black;
+   
+}
+
+.block{
+    width:calc(800px/8);
+    height:calc(800px/8);
+    outline: 1px solid black;
+    text-align: center;
+    float: left;
+    background-color: white;    
+}
+.block_black{
+    background-color: rgb(87, 87, 87);
+}
+.block_white{
+background-color: white;
+}
+.block:hover{
+    box-shadow:inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1) ;
+}
+.shashka{
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+}
+.shashka:hover{
+    transform: scale(1.2);
+}
