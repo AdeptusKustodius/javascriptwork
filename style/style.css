@@ -41,7 +41,7 @@ background-color: white;
 .block:hover{
     box-shadow:inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1) ;
 }
-.shashka{
+.shashka_black{
     text-align: center;
     margin: 0 auto;
     width: 100px;
@@ -51,9 +51,30 @@ background-color: white;
     flex-direction: column;
     font-size: 30px;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    z-index: 1000;
+}
+.shashka_white{
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
     z-index: 1000;
 }
 .shashka:hover{
     transform: scale(1.2);
+}
+
+.hide{
+    display: none;
+}
+.hovered{
+    background-color: yellow;
+    border: 2px dotted red;
 }
