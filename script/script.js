@@ -1,7 +1,3 @@
-
-
-
-
 function drawChess(){
     let black = true;
     let table = document.body.getElementsByClassName("chess");
@@ -12,9 +8,6 @@ function drawChess(){
             if(a==0) black = !black;
             inChessRow +='<div class="block"></div>';
             table[i].innerHTML=inChessRow;
-            
-            
-
 } } }}
 drawChess();
 
@@ -34,3 +27,5 @@ for (let i = 0; i < 8; i++) { // пересчёт элементов в масс
     count++ // добавить+1 к счётчику для пересчёта в строках j%2===0
   }
 }
+
+
